@@ -6,7 +6,7 @@
 ])
 
 @if (isset($href) && !empty($href))
-    <a href="{!! $href !!}" {{ $attributes }} class="blast-inline-flex blast-justify-center blast-items-center blast-py-4 blast-px-2 blast-border blast-border-gray-900 blast-text-gray-900 blast-text-base blast-text-center blast-whitespace-nowrap hover:blast-bg-gray-900 hover:blast-text-white">
+    <a href="{!! $href !!}" {{ $attributes }} class="inline-flex justify-center items-center py-4 px-2 border border-gray-900 text-gray-900 text-base text-center whitespace-nowrap hover:bg-gray-900 hover:text-white">
         @if (isset($icon) && !empty($icon) && $iconPosition ==='before')
             @include('components.blast-demo.'. $icon)
         @endif
